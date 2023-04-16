@@ -6,8 +6,7 @@ def read_input():
         pattern = input().rstrip()
         text = input().rstrip()
     elif "F" in input_type:
-        test_numurs = input("Ievadi testa numuru: ")
-        with open(f"tests/{test_numurs}", "r") as f:
+        with open("tests/06", "r") as f:
             pattern = f.readline().rstrip()
             text = f.readline().rstrip()
     return pattern, text
