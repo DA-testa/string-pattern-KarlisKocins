@@ -2,11 +2,12 @@
 
 def read_input():
     input_type = input().rstrip()
-    if "I" or "i" in input_type:
+    if "I" in input_type:
         pattern = input().rstrip()
         text = input().rstrip()
-    else:
-        with open('input.txt', 'r') as f:
+    elif "F" in input_type:
+        test_numurs = input("Ievadi testa numuru: ")
+        with open(f"tests/{test_numurs}", "r") as f:
             pattern = f.readline().rstrip()
             text = f.readline().rstrip()
     return pattern, text
